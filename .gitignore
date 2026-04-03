@@ -1,0 +1,36 @@
+# Environment & secrets
+.env
+
+# Temporary audio files generated during sessions
+.tmp/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# User config (contains device-specific settings; use config.example.json instead)
+config.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
