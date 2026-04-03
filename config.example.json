@@ -1,0 +1,49 @@
+{
+  "config": {
+    "hotkey_toggle": "ctrl+alt+space",
+    "start_delay_ms": 1000,
+    "language": "en",
+    "engine_mode": "offline",
+    "offline_engine": {
+      "type": "faster-whisper",
+      "model": "medium",
+      "device": "cuda",
+      "compute_type": "float16",
+      "vad_filter": true,
+      "vad_threshold": 0.5,
+      "beam_size": 5
+    },
+    "online_engine": {
+      "enabled": false,
+      "provider": "openai",
+      "model": "whisper-1",
+      "api_key_env": "ONLINE_STT_API_KEY"
+    },
+    "post_processing": {
+      "fix_casing": true,
+      "fix_punctuation": true,
+      "fix_spelling": true,
+      "indian_accent_corrections": true
+    },
+    "commit_mode": "instant_paste",
+    "paste": {
+      "method": "clipboard_ctrl_v",
+      "restore_clipboard": true,
+      "paste_delay_ms": 100
+    },
+    "ui": {
+      "position": "bottom_center",
+      "style": "pill",
+      "always_on_top": true,
+      "bottom_margin_px": 40,
+      "width_px": 260,
+      "height_px": 52
+    },
+    "audio": {
+      "device": "default",
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "dtype": "float32"
+    }
+  }
+}
